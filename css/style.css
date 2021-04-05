@@ -10,6 +10,14 @@ body {
   line-height: 1.7;
 }
 
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+}
+
 /* start header style  */
 header {
   background: url("../images/homeimg.jpg");
@@ -40,20 +48,21 @@ header nav {
   list-style: none;
   margin: auto;
 }
-.web-links ul li {
-  cursor: pointer;
-}
+
 .web-links ul li a {
   color: #3d566e;
-  cursor: pointer;
+  font-weight: 700;
+  transition: 0.4s;
+  font-size: 18px;
 }
 
 .web-links ul li a:hover {
   text-decoration: none;
+  color: #00bba7;
 }
 
 .header-body {
-  height: 80%;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -66,5 +75,86 @@ header nav {
 
 .header-body h3,
 .header-body h4 {
-  font-size: 7vw;
+  font-size: 6vw;
+}
+
+.header-body h3 {
+  padding-bottom: 40px;
+  opacity: 0;
+  animation: headFade 2s linear 1s 1 forwards;
+}
+.header-body h4 {
+  padding-top: 40px;
+  opacity: 0;
+  animation: headFade 2s linear 1s 1 forwards;
+}
+
+@keyframes headFade {
+  10% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    padding: 0px;
+  }
+}
+
+/* start buying steps style  */
+.buy-steps {
+  padding: 100px 100px 20px;
+}
+.buy-steps .container {
+  background-color: #fff;
+  margin-top: -150px;
+}
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  flex-direction: column;
+}
+
+.icon-holder {
+  background-color: #00bba7;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  color: #444;
+}
+.step p {
+  font-family: "Dosis", sans-serif;
+}
+
+/* start latest items  */
+.latest-items h4 {
+  color: #444;
+}
+
+.separators {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-star {
+  color: #e4e4e4;
+}
+.separators::before,
+.separators::after {
+  content: "";
+  width: 15vw;
+  margin-top: 9px;
+  height: 3px;
+  background-color: #e4e4e4;
+  margin: 20px;
 }
