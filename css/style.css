@@ -320,3 +320,73 @@ header nav {
   font-weight: 300;
   font-size: 19px;
 }
+.separators2 .fa-star {
+  color: #444;
+}
+
+/* start promote  */
+.promote {
+  background: #00bba7;
+  text-transform: capitalize;
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+}
+.promote-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promote-content a {
+  padding: 5px 25px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.promote-content a:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #00bba7;
+}
+
+/* start footer  */
+
+footer {
+  background: #222;
+}
+.footer-content p {
+  text-transform: capitalize;
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.icons-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-boxer {
+  color: #e4e4e4;
+  border: solid 1px #333;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cpy {
+  font-size: 12px !important;
+}
