@@ -35,6 +35,94 @@ header nav {
   box-shadow: 0px 3px 2px 0px rgb(50 50 50 / 10%);
 }
 
+.menu-btn {
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.btn-line {
+  width: 30px;
+  height: 5px;
+  background-color: #444;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.btn-line::after,
+.btn-line::before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.btn-line::before {
+  bottom: 10px;
+}
+
+.btn-line::after {
+  top: 10px;
+}
+
+.rspnsv-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.993);
+  width: 100%;
+  overflow: hidden;
+}
+
+.rspnsv-menu.opened {
+  box-shadow: 0px 3px 2px 0px rgb(50 50 50 / 10%);
+  display: block;
+}
+
+.rspnsv-menu ul {
+  list-style: none;
+  display: none;
+  transition: 0.4s all ease-in-out;
+}
+
+.rspnsv-menu.opened ul {
+  display: block;
+}
+
+.rspnsv-menu ul li {
+  margin-left: 0;
+}
+.rspnsv-menu ul li:hover {
+  background: #00bba7;
+}
+.rspnsv-menu ul li:hover a {
+  color: #fff;
+}
+.rspnsv-menu ul li a {
+  color: #333;
+}
+.rspnsv-menu ul li a:hover {
+  text-decoration: none;
+}
+.web-links ul li a.active,
+.rspnsv-menu ul li a.active {
+  color: #00bba7;
+}
+@media all and (max-width: 875px) {
+  .web-links {
+    display: none;
+  }
+  .rspnsv-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
 .brand,
 .brand:hover {
   font-size: 30px;
@@ -103,6 +191,8 @@ header nav {
 /* start buying steps style  */
 .buy-steps {
   padding: 100px 100px 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .buy-steps .container {
   background-color: #fff;
@@ -112,7 +202,6 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 50px; */
   flex-direction: column;
 }
 
