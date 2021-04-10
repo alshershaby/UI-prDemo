@@ -494,3 +494,78 @@ footer {
   background-color: #fff;
   margin-top: -70px;
 }
+
+/* start product style  */
+
+.product-img-holder {
+  border: solid #e4e4e4 1px;
+  padding: 15px;
+  margin: 0px auto 10px;
+}
+
+.buy-btn {
+  font-size: 25px;
+  padding: 14px 25px;
+  background: #00bba7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+}
+
+.buy-btn a:hover {
+  text-decoration: none;
+}
+
+.product-items ul {
+  padding: 14px 25px;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 1px solid #e4e4e4;
+  margin-top: 15px;
+}
+
+.product-items ul li > span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* start checkout style  */
+.table {
+  text-transform: capitalize;
+  font-family: "Dosis", sans-serif;
+}
+
+form fieldset,
+.contact-form {
+  text-transform: capitalize;
+  font-family: "Dosis", sans-serif;
+}
+
+.formInfo fieldset {
+  border: solid 1px #e4e4e4;
+  padding: 20px 10px !important;
+}
+.formInfo legend {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.btn-purchase {
+  padding: 14px 25px;
+  background: #00bba7;
+  color: #fff;
+  font-size: 17px;
+}
